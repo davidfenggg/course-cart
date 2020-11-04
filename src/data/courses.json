@@ -2,7 +2,7 @@
   {
     "dept": "CIS",
     "number": 110,
-    "title": "Introduction to Computer Programming (with Java, for Beginners",
+    "title": "Introduction to Computer Programming (with Java, for Beginners)",
     "description": "Introduction to Computer Programming is the first course in our series introducing students to computer science. In this class you will learn the fundamentals of computer programming in Java, with emphasis on applications in science and engineering. You will also learn about the broader field of computer science and algorithmic thinking, the fundamental approach that computer scientists take to solving problems."
   },
   {
@@ -41,7 +41,7 @@
   {
     "dept": "CIS",
     "number": 160,
-    "title": "Mathematical Foundations of Computer Scienc",
+    "title": "Mathematical Foundations of Computer Science",
     "description": "What are the basic mathematical concepts and techniques needed in computer science? This course provides an introduction to proof principles and logics, functions and relations, induction principles, combinatorics and graph theory, as well as a rigorous grounding in writing and reading mathematical proofs."
   },
   {
@@ -75,13 +75,13 @@
   {
     "dept": "CIS",
     "number": 194,
-    "title": "Haskell Programmin",
+    "title": "Haskell Programming",
     "description": "Haskell is a high-level, purely functional programming language with a strong static type system and elegant mathematical underpinnings. It is being increasingly used in industry by organizations such as Facebook, AT&T, and NASA, along with several financial firms. We will explore the joys of functional programming, using Haskell as a vehicle. The aim of the course will be to allow you to use Haskell to easily and conveniently write practical programs. All are welcome, including those with no programming experience. Evaluation will be based on regular homework assignments and class participation."
   },
   {
     "dept": "CIS",
     "number": 195,
-    "title": "Mobile App Developmen",
+    "title": "Mobile App Development",
     "prereqs": ["CIS 120"],
     "description": "This project-oriented course is centered around application development on current mobile platforms like iOS and Android. Section 201 (iOS) will be taught in Swift, and cover iOS fundamentals such as app lifecycles, storyboarding, delegation, networking and usage of both native and external libraries. Section 202 (Android) will be taught in Java with XML and will cover Android fundamentals such as layout, app lifecycles and different APIs."
   },
@@ -111,7 +111,7 @@
   {
     "dept": "CIS",
     "number": 240,
-    "title": "Introduction to Computer Architectur",
+    "title": "Introduction to Computer Architecture",
     "prereqs": ["CIS 110 or equivalent experience"],
     "description": "You know how to program, but do you know how computers really work? How do millions of transistors come together to form a complete computing system? This bottom-up course begins with transistors and simple computer hardware structures, continues with low-level programming using primitive machine instructions, and finishes with an introduction to the C programming language. This course is a broad introduction to all aspects of computer systems architecture and serves as the foundation for subsequent computer systems courses, such as Digital Systems Organization and Design (CIS 371), Computer Operating Systems (CIS 380), and Compilers and Interpreters (CIS 341)."
   },
@@ -323,7 +323,7 @@
     "dept": "CIS",
     "number": 497,
     "title": "Senior Project (DMD Students only)",
-    "prereqs": "Senior standing or permission of instructor",
+    "prereqs": ["Senior standing or permission of instructor"],
     "description": "The goal of this course is to provide an opportunity for seniors to define, design, and execute a project of your own choosing that demonstrates the technical skills and abilities that you have acquired during your 4 years as undergraduates. Evaluation is based on selecting an interesting topic, completing appropriate research on the state of the art in that area, communicating your objectives in writing and in presentations, accurately estimating what resources will be required to complete your chosen task, coding necessary functionality, and executing your plan."
   }
 ]

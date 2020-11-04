@@ -1,14 +1,244 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body,
+#root {
+  height: "100vh";
+  margin: 0;
+}
+
+body,
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  height: 10rem;
+}
+
+main {
+  grid-area: main;
+  padding-bottom: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 3 60rem;
+}
+
+.sidebar {
+  flex: 1 20rem;
+}
+
+/* courses */
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.receipt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-top: -2rem;
+}
+
+.receipt li {
+  height: 5rem;
+  width: 50rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.courses li {
+  flex: 1 1 29rem;
+  height: 5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.course {
+  justify-content: space-between;
+  height: 100%;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  background: #c0c0c0;
+  color: #fff;
+  border: 0.1rem #c0c0c0;
+  padding: 5px 9px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 37rem;
+}
+
+.button.add {
+  background-color: #203040;
+}
+
+.button-proceed {
+  background: #203040;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 10rem;
+  padding: 5px 9px;
+  font-size: 100%;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.btn {
+  background: #fff;
+  color: #fff;
+  border: 0.1rem #c0c0c0;
+  padding: 5px 9px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn.remove {
+  background-color: #8b0000;
+}
+
+.course-description {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.course-cart-description {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.filter div {
+  flex: 1;
+}
+
+.cart {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-header {
+  border-bottom: 0.1rem #c0c0c0 solid;
+  margin-top: 7rem;
+}
+
+.cart-items {
+  padding: 0rem;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-between;
+  height: 7rem;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-items li {
+  display: flex;
+}
+
+.cart-items li div {
+  padding: 0.5rem;
+}
+
+.cart-header li div:last-child {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
+  align-items: right;
+  justify-content: right;
+  float: right;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.total > div {
+  font-size: 2rem;
+}
+
+.total > div,
+.total > button {
+  flex: 1;
+  align-items: center;
 }
